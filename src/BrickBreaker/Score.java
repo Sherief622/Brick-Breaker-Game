@@ -15,9 +15,9 @@ public class Score
     public void draw(Graphics g)
     {
         g.setColor(Color.green);
-        g.setFont(new Font("Consoles", Font.PLAIN, 30));
-        g.drawString(("Score:")+String.valueOf(player/10)+String.valueOf(player%10), (GAME_WIDTH/2) - (GAME_WIDTH/3) - 110 , (GAME_HEIGHT/2));
-        g.drawString(("Lives:")+String.valueOf(miss),(GAME_WIDTH/2) - (GAME_WIDTH/3) - 110, (GAME_HEIGHT/2)+30); //Life counter display
+        g.setFont(new Font("Dialog", Font.PLAIN, 30));
+        g.drawString(("Score: ")+String.valueOf(player/10)+String.valueOf(player%10), (GAME_WIDTH/2) - (GAME_WIDTH/3) - 110 , (GAME_HEIGHT/2));
+        g.drawString(("Lives: ")+String.valueOf(miss),(GAME_WIDTH/2) - (GAME_WIDTH/3) - 110, (GAME_HEIGHT/2)+30); //Life counter display
     }
 }
 
