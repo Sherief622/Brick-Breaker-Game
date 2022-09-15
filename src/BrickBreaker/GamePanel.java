@@ -21,6 +21,7 @@ public class GamePanel extends JPanel implements Runnable
     WreckBall ball;
     Bricks bricks;
     Score score;
+    Stars stars;
 
     public GamePanel()
     {
@@ -28,6 +29,7 @@ public class GamePanel extends JPanel implements Runnable
         newBall();
         newBricks();
         score = new Score(WIDTH, HEIGHT);
+        stars = new Stars(10, 15);
         this.setFocusable(true);
         this.setPreferredSize(SCREEN_SIZE);
         this.addKeyListener(new AL());
@@ -56,6 +58,7 @@ public class GamePanel extends JPanel implements Runnable
     }
     public void draw(Graphics g) //draw all our game components by calling their draw methods
     {
+        stars.draw(g);
         pad.draw(g);
         bricks.draw(g);
         score.draw(g);
@@ -66,7 +69,7 @@ public class GamePanel extends JPanel implements Runnable
         pad.move();
         ball.move();
     }
-    public void checkCollide() //tbd
+    public void checkCollide()
     {
         //Check if ball collides with pad
         if(ball.intersects(pad))
