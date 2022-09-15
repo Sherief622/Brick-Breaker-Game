@@ -27,7 +27,7 @@ public class Stars
         {
             for(int j = 0; j < stars[0].length; j++)
             {
-                if(stars[i][j] % 3 == 0)
+                if(stars[i][j] % 25 == 0)
                 {
                     g.setColor(Color.yellow);
                     g.fillOval(j * diameter, i * diameter, diameter, diameter);

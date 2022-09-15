@@ -29,7 +29,7 @@ public class GamePanel extends JPanel implements Runnable
         newBall();
         newBricks();
         score = new Score(WIDTH, HEIGHT);
-        stars = new Stars(10, 15);
+        stars = new Stars(100, 150);
         this.setFocusable(true);
         this.setPreferredSize(SCREEN_SIZE);
         this.addKeyListener(new AL());
