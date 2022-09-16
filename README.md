@@ -1,6 +1,6 @@
 # Space Brick Breaker - Java
 Brick Breaker game made with Java, utilizing the features of Swing.
-If any bugs are found, feel free to notify me or add your own fix and request a merge.
+If any bugs are found, feel free to notify me or add your own fix and request a merge. Would love to see what other people could come up with.
 
 ## How the game works
   * Run the Main class in your IDE after installing the repository
